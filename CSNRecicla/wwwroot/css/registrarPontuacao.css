@@ -1,0 +1,67 @@
+﻿body {
+    background-color: white;
+}
+
+.principal-title {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.card {
+    background-color: #C8CD95;
+    margin: 20px 0;
+}
+
+.cabecalho {
+    background-color: #0F6534;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+    .cabecalho button {
+        color: white;
+    }
+
+        .cabecalho button:hover {
+            text-decoration: none;
+            color: black;
+        }
+
+.card-header {
+    background-color: #4DB748;
+}
+
+    .card-header button {
+        color: black;
+    }
+
+        .card-header button:hover {
+            color: black;
+        }
+
+.img-menu {
+    height: 100%;
+}
+
+.box-register {
+    background-color: white;
+    width: 550px;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+.register {
+    margin-top: 80px;
+    background-color: #A6D48C;
+    margin-bottom: 0;
+    padding-bottom: 80px;
+}
+
+footer {
+    text-align: center;
+    font-size: 16px;
+    background-color: #0F6534;
+    color: white;
+}

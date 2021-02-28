@@ -1,0 +1,42 @@
+﻿.title-dash {
+    color: #0F6534;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.principal-dash {
+    background-color: white;
+}
+
+.box-dash {
+    background-color: #4DB748;
+    margin: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.box-dash2 {
+    background-color: #C8CD95;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.box-benefits {
+    background-color: #A6D48C;
+    margin: 10px 0 10px 0;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.row-box-benefits {
+    display: flex;
+}
+
+.card {
+    margin: 40px 60px 0 80px;
+}
