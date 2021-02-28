@@ -1,0 +1,29 @@
+﻿@model PontuacaoViewModel
+
+@{
+    ViewData["Title"] = "Meus Pontos";
+}
+<script src="https://kit.fontawesome.com/39e3608a27.js" crossorigin="anonymous"></script>
+
+<main class="container-fluid principal">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <div class="boxes">
+                <h1>Cadastrar Pontos</h1>
+                <i class="fas fa-plus-circle"></i>
+                <h3 class="points">Adicione seus pontos já!</h3>
+                <br>
+                <a asp-action="Index" asp-controller="Home" class="btn btn-primary btn-main">Saiba mais</a>
+                <a asp-action="Registrar" asp-controller="Pontuacao" class="btn btn-primary btn-main">Fazer cadastro</a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="boxes">
+                <h1>Meus Pontos</h1>
+                <i class="fas fa-recycle"></i>
+                <h1 class="points"><strong>@Model.Pontos PTS</strong> </h1>
+                <a asp-action="Index" asp-controller="TrocasPontuacao" class="btn btn-primary btn-main">Fazer troca</a>
+            </div>
+        </div>
+    </div>
+</main>

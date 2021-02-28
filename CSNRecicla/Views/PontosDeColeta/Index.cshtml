@@ -1,0 +1,30 @@
+﻿@model IEnumerable<PontoDeColetaViewModel>
+
+@{
+    ViewData["Title"] = "Registrar";
+}
+
+<br />
+<center><strong>Meus pontos de coleta cadastrados</strong></center>
+<br />
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Documento</th>
+            <th scope="col">Endereço</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ponto in Model)
+        {
+            <tr>
+                <td>@ponto.Nome</td>
+                <td>@ponto.Descricao</td>
+                <td>@ponto.NumeroDoc</td>
+                <td>@ponto.Endereco</td>
+            </tr>
+        }
+    </tbody>
+</table>

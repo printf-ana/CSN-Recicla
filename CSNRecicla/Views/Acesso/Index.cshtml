@@ -1,0 +1,51 @@
+﻿@model LoginViewModel 
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<main class="login">
+    <div class="container box-login" id="acesso">
+        <div class="first">
+            <img src="~/assets/logo.jpeg" width="160" />
+            <h1 class="title-login">Entrar</h1>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <span class="text-danger">@ViewBag.Message</span>
+        </div>
+        <form asp-action="Index" method="post" class="form">
+            <div class="form-group">
+                <label asp-for="Login"></label>
+                <input asp-for="Login" type="email" class="form-control" id="email" placeholder="E-mail" required>
+                <span class="text-danger" asp-validation-for="Login"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Senha"></label>
+                <input asp-for="Senha" type="password" class="form-control" id="password" placeholder="Senha" required>
+                <span class="small">A senha deve conter letras, números e ao menos 1 caracter especial</span>
+                <span class="text-danger" asp-validation-for="Senha"></span>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-login">Entrar</button>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="news" checked>
+                    <label class="form-check-label" for="news">
+                        Concordo com os termos de uso e de
+                        privacidade
+                    </label>
+                </div>
+            </div>
+            <div class="text-center">
+                <a class="" href="">
+                    <p class="link-login-2">Esqueci a senha</p>
+                </a>
+                <p>Não tem uma conta? 
+                    <a asp-action="Registrar" asp-controller="Acesso" class="link-login">Cadastre-se</</a>
+                </p>
+            </div>
+        </form>
+    </div>
+</main>
+
+<script>
+    document.getElementById("acesso").scrollIntoView();
+</script>

@@ -1,0 +1,779 @@
+﻿@model RegistroDePontosViewModel
+
+<link rel="stylesheet" href="~/css/registrarPontuacao.css" />
+
+<main>
+    <h1 class="principal-title">Tipos de Pontos</h1>
+    <div class="accordion container" id="accordionExamplee">
+        <div class="card principal">
+            <div class="cabecalho" id="heading-one">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse"
+                            data-target="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
+                        Alimentos
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapse-one" class="collapse" aria-labelledby="headingone" data-parent="#accordionExamplee">
+                <div class="card-body">
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-center" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                        Atomatados
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                 data-parent="#accordionExample">
+                                <div class="card-body" style="display: flex;">
+                                    <img src="~/assets/atomatados.png" class="img-menu" alt="">
+
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Dimensão lata (mm)</th>
+                                                <th scope="col">Peso liq. produto *</th>
+                                                <th scope="col">
+                                                    Tipo de tampa
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>52×74</td>
+                                                <td>140g </td>
+                                                <td>
+                                                    Convencional
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>73×92 </td>
+                                                <td>350g </td>
+                                                <td>
+                                                    Convencional e Easy-open
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>73×99 </td>
+                                                <td>375g</td>
+                                                <td>
+                                                    Convencional e Easy-open
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>73×110 </td>
+                                                <td>410g </td>
+                                                <td>52×74</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>99×118 </td>
+                                                <td>840g </td>
+                                                <td>
+                                                    Convencional e Easy-open
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>155×178 </td>
+                                                <td>3,1kg </td>
+                                                <td>
+                                                    Convencional
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>155×152 </td>
+                                                <td>-</td>
+                                                <td>
+                                                    Convencional
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>155×226 </td>
+                                                <td>4kg</td>
+                                                <td>
+                                                    Convencional
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-center collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                        Conservas
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                 data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="card-body" style="display: flex;">
+                                        <img src="~/assets/conservas.png" class="img-menu" alt="">
+                                        <img src="~/assets/conservas2.png" class="img-menu" alt="">
+
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Dimensão lata (mm)</th>
+                                                    <th scope="col">Peso liq. produto *</th>
+                                                    <th scope="col">
+                                                        Tipo de tampa
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>73×75 </td>
+                                                    <td>– </td>
+                                                    <td>
+                                                        Convencional e Easy-open
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>73×83 </td>
+                                                    <td>200g </td>
+                                                    <td>
+                                                        Convencional e Easy-open
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>73×110 </td>
+                                                    <td>400g</td>
+                                                    <td>
+                                                        Convencional e Easy-open
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>99×118 </td>
+                                                    <td>800g </td>
+                                                    <td>
+                                                        Convencional e Easy-open
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>155×152 </td>
+                                                    <td>1,75kg </td>
+                                                    <td>
+                                                        Convencional
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>155×178 </td>
+                                                    <td>2kg</td>
+                                                    <td>
+                                                        Convencional
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-center collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                        Compotas
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                 data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="card-body" style="display: flex;">
+                                        <img src="~/assets/compotas.png" class="img-menu" alt="">
+                                        <img src="~/assets/compotas2.png" class="img-menu" alt="">
+
+
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Dimensão lata (mm)</th>
+                                                    <th scope="col">Peso liq. produto *</th>
+                                                    <th scope="col">Tipo de tampa</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>73×75 </td>
+                                                    <td>– </td>
+                                                    <td>Convencional e Easy-open </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>73×83 </td>
+                                                    <td>-</td>
+                                                    <td>Convencional e Easy-open</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>73×110 </td>
+                                                    <td>400g</td>
+                                                    <td>Convencional e Easy-open</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>99×118 </td>
+                                                    <td>800g </td>
+                                                    <td>Convencional e Easy-open </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>155×152 </td>
+                                                    <td>- </td>
+                                                    <td>Convencional</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>155×178 </td>
+                                                    <td>2kg</td>
+                                                    <td>Convencional </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>155×226 </td>
+                                                    <td>4kg</td>
+                                                    <td>Convencional </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-center collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour">
+                                        Produtos secos/em pó
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                 data-parent="#accordionExample">
+                                <div class="card-body" style="display: flex;">
+                                    <img src="~/assets/pó.png" class="img-menu" alt="">
+
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Dimensão lata (mm)</th>
+                                                <th scope="col">Peso liq. produto *</th>
+                                                <th scope="col">Tipo de tampa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>73×75 </td>
+                                                <td>– </td>
+                                                <td>Convencional e Easy-open </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>73×83 </td>
+                                                <td>-</td>
+                                                <td>Convencional e Easy-open </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>73×110 </td>
+                                                <td>-</td>
+                                                <td>Convencional e Easy-open</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>99×119</td>
+                                                <td>400g </td>
+                                                <td>Convencional e Easy-open</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>99×118,75 </td>
+                                                <td>- </td>
+                                                <td> Pell- Off</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>127×143,50 </td>
+                                                <td>-</td>
+                                                <td>Pell- Off</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>127×144 </td>
+                                                <td>800g</td>
+                                                <td>Convencional</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-center collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                            aria-controls="collapseFive">
+                                        Carnes
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                 data-parent="#accordionExample">
+                                <div class="card-body" style="display: flex;">
+                                    <img src="~/assets/carnes.png" class="img-menu" alt="">
+                                    <img src="~/assets/carnes2.png" class="img-menu" alt="">
+
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Dimensão lata (mm)</th>
+                                                <th scope="col">Peso liq. produto *</th>
+                                                <th scope="col">
+                                                    Tipo de tampa
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>61x78x58 </td>
+                                                <td>– 07oz </td>
+                                                <td>Convencional e Easy-open</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>61x78x58 </td>
+                                                <td>– 12oz </td>
+                                                <td>Convencional</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>73×75 </td>
+                                                <td>– </td>
+                                                <td>Convencional e Easy-open</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>73×83 </td>
+                                                <td>-</td>
+                                                <td>Convencional e Easy-open </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>73×110 </td>
+                                                <td>450g </td>
+                                                <td>Convencional e Easy-open </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>99×118</td>
+                                                <td>850g </td>
+                                                <td>Convencional e Easy-open</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>155×152 </td>
+                                                <td>2,7kg </td>
+                                                <td>Convencional</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>155×178 </td>
+                                                <td>4,5kg </td>
+                                                <td>Convencional</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>155×226 </td>
+                                                <td>5,4kg </td>
+                                                <td>Convencional</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingSix">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-center collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+                                            aria-controls="collapseSix">
+                                        Pet Food
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                 data-parent="#accordionExample">
+                                <div class="card-body" style="display: flex;">
+                                    <img src="~/assets/carnes.png" class="img-menu" alt="">
+                                    <img src="~/assets/carnes2.png" class="img-menu" alt="">
+
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Dimensão lata (mm)</th>
+                                                <th scope="col">Peso liq. produto *</th>
+                                                <th scope="col">Tipo de tampa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr>
+                                                <td>73×75 </td>
+                                                <td>– </td>
+                                                <td>Convencional e Easy-open</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>73×83 </td>
+                                                <td>340g </td>
+                                                <td>Convencional e Easy-open</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>73×110 </td>
+                                                <td>–</td>
+                                                <td>Convencional e Easy-open</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cabecalho" id="headingt-two">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-center collapsed" type="button"
+                            data-toggle="collapse" data-target="#collapse-two" aria-expanded="false"
+                            aria-controls="collapse-two">
+                        Químicos
+                    </button>
+                </h2>
+            </div>
+            <div id="collapse-two" class="collapse" aria-labelledby="heading-two" data-parent="#accordionExamplee">
+                <div class="card-body">
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingSeven">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-center" type="button"
+                                            data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true"
+                                            aria-controls="collapseSeven">
+                                        Tintas
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                                 data-parent="#accordionExample">
+                                <div class="card-body">
+
+                                    <div class="card-body" style="display: flex;">
+                                        <img src="~/assets/tintas.png" class="img-menu" alt="">
+                                        <img src="~/assets/tintas2.png" class="img-menu" alt="">
+
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Tintas</th>
+                                                    <th scope="col">Dimensão nominal (mm) </th>
+                                                    <th scope="col">Capacidade total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr>
+                                                    <td>1/32 galão </td>
+                                                    <td> Ø52 x 67 </td>
+                                                    <td>110 ml</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>1/32 galão </td>
+                                                    <td> Ø52 x 85 </td>
+                                                    <td>150 ml</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>1/16 galão </td>
+                                                    <td> Ø73 x 71 </td>
+                                                    <td>240 ml</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>1/16 galão </td>
+                                                    <td> Ø73 x 136 </td>
+                                                    <td>538 ml</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>1/16 galão </td>
+                                                    <td> Ø73 x 139 </td>
+                                                    <td>540 ml </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Balde 18 l homologado </td>
+                                                    <td> Ø285 x 332 </td>
+                                                    <td>19,8 l * tampa c/ cinta metálica</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Balde 20 l </td>
+                                                    <td> Ø285 x 363 </td>
+                                                    <td>20,9 l * tampa de encaixe/garra</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Balde 20 l homologado </td>
+                                                    <td> Ø285 x 363 </td>
+                                                    <td>19,8 l * tampa c/ cinta metálica</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingEight">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-center collapsed" type="button"
+                                                data-toggle="collapse" data-target="#collapseEight"
+                                                aria-expanded="false" aria-controls="collapseEight">
+                                            Aerossol
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                                     data-parent="#accordionExample">
+                                    <div class="card-body" style="display: flex;">
+                                        <img src="~/assets/aerossol.png" class="img-menu" alt="">
+
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Dimensão nominal (mm) </th>
+                                                    <th scope="col">
+                                                        Capacidade total
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr>
+                                                    <td> Ø57 X 102</td>
+                                                    <td>240 ml</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Ø57 x 115</td>
+                                                    <td> 280 ml</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Ø57 X 138</td>
+                                                    <td>339 ml</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Ø57 X 166</td>
+                                                    <td>390 ml</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Ø57 X 206</td>
+                                                    <td>510 ml</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Ø57 X 238</td>
+                                                    <td>590 ml</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Ø65 X 99</td>
+                                                    <td>337 ml</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Ø65 X 125</td>
+                                                    <td>408 ml</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Ø65 X 158</td>
+                                                    <td>520 ml</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Ø65 X 189</td>
+                                                    <td>623 ml</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingNine">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-center collapsed" type="button"
+                                                data-toggle="collapse" data-target="#collapseNine" aria-expanded="false"
+                                                aria-controls="collapseNine">
+                                            Especialidades
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
+                                     data-parent="#accordionExample">
+                                    <div class="card-body" style="display: flex;">
+                                        <img src="~/assets/especialidades.png" class="img-menu" alt="">
+                                        <img src="~/assets/especialidades2.png" class="img-menu" alt="">
+
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Tipo de lata</th>
+                                                    <th scope="col">Dimensão nominal (mm) </th>
+                                                    <th scope="col">Capacidade total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Catalisador</td>
+                                                    <td>Ø52 x 67</td>
+                                                    <td>125 g</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Catalisador</td>
+                                                    <td> Ø52 x 85</td>
+                                                    <td>165 g</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Catalisador</td>
+                                                    <td>Ø73 x 139</td>
+                                                    <td>552 ml</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Inseticida em pó</td>
+                                                    <td>Ø73 x 29</td>
+                                                    <td>50 g</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Cera pasta </td>
+                                                    <td>Ø120 x 35 </td>
+                                                    <td>200 g </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <section class="container-fluid register">
+        <h1 class="principal-title">Registro de Pontos</h1>
+        <div class=" container box-register">
+            <form asp-action="Registrar" method="post" class="form">
+                <p>Tipo de Embalagem:</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                           value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Alimentos
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                           value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Químicos
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1" style="padding-top: 20px;">Embalagens:</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Atomatados</option>
+                        <option>Conservas</option>
+                        <option>Compotas</option>
+                        <option>Produtos secos/em pó</option>
+                        <option>Carnes</option>
+                        <option>Pet Food</option>
+                        <option>Tintas</option>
+                        <option>Aerossol</option>
+                        <option>Especialidades</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Quantidade">Quantidade:</label>
+                    <input asp-for="Quantidade" type="number" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Observacao">Observações:</label>
+                    <textarea asp-for="Observacao" class="form-control" rows="3"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-main" style="width: 100%;">
+                        Enviar Pontos
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>

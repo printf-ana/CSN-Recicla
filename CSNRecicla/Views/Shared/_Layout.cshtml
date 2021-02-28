@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CSN Recicla</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" asp-action="Index" asp-controller="Home" style="padding-left: 25px"><img src="~/assets/logo.jfif" style="width: 60%" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+
+                <div class="float-right" style="padding-right: 15px">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <span><strong>@User.Identity.Name</strong></span>
+                        <a class="btn btn-secondary btn-header btn-header2" asp-controller="Pontuacao" asp-action="Index">Ver pontuação</a>
+                        <a class="btn btn-secondary btn-header btn-header2" asp-controller="PontosDeColeta" asp-action="Cadastrar">Cadastrar ponto de coleta</a>
+                        <a class="btn btn-secondary btn-header btn-header2" asp-controller="Acesso" asp-action="Logout">Sair</a>
+                    }
+                    else
+                    {
+                        <a asp-action="Registrar" asp-controller="Acesso" class="btn btn-secondary btn-header" style="margin-right: 10px;">Criar conta</a>
+                        <a asp-action="Index" asp-controller="Acesso" class="btn btn-secondary btn-header btn-header2">Entrar</a>
+                    }
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            Desenvolvido por Matriz 2x2 © 2021
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

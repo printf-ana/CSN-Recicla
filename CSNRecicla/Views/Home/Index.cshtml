@@ -1,0 +1,126 @@
+﻿@{
+    ViewData["Title"] = "Início";
+}
+
+<main class="first-page">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6">
+                <div class="texto titles-main">
+                    <h1 class="title-main">CSN RECICLA</h1>
+                    <p class="text-main">
+                        Uma nova forma de tratar as suas embalagens de aço, são diversos benefícios para você aproveitar!
+                        Ganhar é muito fácil!
+                        <br> É só fazer suas reciclagens do dia a dia e cadastrar na plataforma, assim, você acumula e troca benefícios nos parceiros CSN Inova.
+                    </p>
+                    <a href="#pontos-de-coleta" class="btn btn-secondary btn-main">Saiba mais</a>
+                    <button type="button" class="btn btn-secondary btn-main second-btn">Contato</button>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6">
+                <div class="texto">
+                    <img src="~/assets/pessoas-positivas-classificando-ilustracao-plana-de-lixo-isolado_74855-14489__1_-removebg-preview.png" class="img-fluid background-img-main" alt="">
+                </div>
+            </div>
+
+            <!--<div class="opacidade">
+                <img src="" class="img-fluid" alt="">
+            </div>-->
+
+        </div>
+    </div>
+
+</main>
+
+<section class="presentation">
+    <div class="container">
+        <h1 class="title-sections">BENEFÍCIOS</h1>
+        <div class="row">
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img src="~/assets/products.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">PRODUTOS</h5>
+                        <p class="card-text">Troque pontos na plataforma, por produtos em nossas lojas parceiras!</p>
+                        <a asp-action="Registrar" asp-controller="Acesso" class="btn btn-secondary btn-beneficios">Ver produtos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img src="~/assets/desconto.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">DESCONTOS</h5>
+                        <p class="card-text">Ganhe descontos nas lojas parceiras com os seus pontos acumulados!</p>
+                        <a asp-action="Registrar" asp-controller="Acesso" class="btn btn-secondary btn-beneficios">Ver descontos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img src="~/assets/gifts.jpg" class="card-img-top" style="height: 286px; object-fit: contain;" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">BRINDES</h5>
+                        <p class="card-text">Garanta brindes exclusivos da CSN e das lojas parceiras com o acúmulo de seus pontos!</p>
+                        <a asp-action="Registrar" asp-controller="Acesso" class="btn btn-secondary btn-beneficios">Ver brindes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cadastro-ponto" id="pontos-de-coleta">
+    <h1 class="title-pontos">PONTOS DE COLETA</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6">
+                <p class="text-pontos" style="line-height: 26px;">
+                    Os pontos de coletas tornam possível a entrega das embalagens de aço em troca de pontos na plataforma.
+                    <br> Se você for um ponto de coleta, basta se cadastrar informando seu CPF/CNPJ e já está pronto para receber as embalagens mais próximas à você, <strong> é gratuito!</strong>
+                    <br> E você que possui muitas embalagens e precisa dar um destino para elas, essa plataforma também foi feita pra você! E a vantagem é que a cada embalagem cadastrada, você ganha pontos que podem ser trocados por diversos benefícios! Também de forma <strong>gratuita!</strong>
+                </p>
+                <p style="font-size: 20px;"><strong>Encontre o ponto de coleta mais próximo de você!</p></strong>
+                <a asp-action="Index" asp-controller="Acesso" type="button" class="btn btn-secondary btn-main">Cadastrar</a>
+                <a asp-action="Index" asp-controller="Acesso" type="button" class="btn btn-secondary btn-main">Encontrar</a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6">
+                <img src="~/assets/maps.png" class="img-fluid background-img-ponto-coleta" alt="">
+            </div>
+        </div>
+</section>
+
+<section class="contato">
+    <h1 class="title-sections">CONTATO</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6">
+                <img src="~/assets/contact.png" class="img-fluid background-img-main" alt="">
+            </div>
+            <div class="col-12 col-sm-12 col-md-6">
+                <form class="form" data-netlify="true">
+                    <div class="form-group">
+                        <label for="name">Nome Completo:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Maria da Silva" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" class="form-control" id="telefone" placeholder="(XX) XXXXXX-XXXX"
+                               required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Mensagem (opcional):</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-main">Enviar</button>
+                </form>
+            </div>
+
+        </div>
+</section>

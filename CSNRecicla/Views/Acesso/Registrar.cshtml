@@ -1,0 +1,63 @@
+﻿@model RegistroViewModel
+
+@{
+    ViewData["Title"] = "Registrar";
+}
+
+<main class="cadastro">
+    <div class="container box-cadastro" id="cadastro">
+        <div class="first">
+            <img src="~/assets/logo.jpeg" width="160" />
+            <h1 class="title-login">Cadastrar</h1>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <span class="text-danger">@ViewBag.Message</span>
+        </div>
+        <form asp-action="Registrar" class="form">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input asp-for="PrimeiroNome" type="text" class="form-control" id="name" placeholder="Nome" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <input asp-for="UltimoNome" type="text" class="form-control" id="lastname" placeholder="Sobrenome" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input asp-for="NumeroDoc" type="text" class="form-control" id="razao" placeholder="CPF/CNPJ" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <input asp-for="Email" type="email" class="form-control" id="email" placeholder="E-mail" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input asp-for="Senha" type="password" class="form-control" id="password" placeholder="Senha" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <input asp-for="ConfirmaSenha" type="password" class="form-control" id="password" placeholder="Confirmar senha" required>
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="news" checked>
+                    <label class="form-check-label" for="news">
+                        Concordo com os termos de uso e de
+                        privacidade
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-login">Cadastrar</button>
+                <a asp-action="Index">Já tenho uma conta. Fazer Login</a>
+            </div>
+        </form>
+    </div>
+</main>
+
+<script>
+    document.getElementById("cadastro").scrollIntoView();
+</script>
+
+@section scripts{
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

@@ -1,0 +1,89 @@
+﻿@model PontuacaoViewModel
+
+@{
+    ViewData["Title"] = "Troca de Pontuação";
+}
+
+<link rel="stylesheet" href="~/css/trocaPontuacao.css" />
+
+<main class="container-fluid principal-dash">
+    <h1 class="title-dash">Dashboard</h1>
+    <div class="row">
+        <div class="col-4">
+            <div class="container box-dash">
+                <h2 style="color: white;">Você tem:</h2>
+                <h1>@Model.Pontos PTS</h1>
+            </div>
+            <div class="container box-dash2">
+                <h2 style="color: white;">Sua evolução:</h2>
+                <img src="~/assets/grafico.jpg" style="width: 100%;" alt="">
+            </div>
+            <div class="container box-dash">
+                <h2 style="color: white;">Pontos no último ano:</h2>
+                <h1>88.000 PTS</h1>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="container box-benefits">
+                <div class="row-box-benefits">
+                    <div class="card" style="width: 18rem; height: 100%;">
+                        <img class="card-img-top" src="~/assets/drogaria-moderna.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h2>10 pontos</h2>
+                            <h5 class="card-title">15% de desconto</h5>
+
+                            <a asp-action="Status" class="btn btn-primary btn-header">Trocar Pontos</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; height: 100%;">
+                        <img class="card-img-top" src="~/assets/energetica.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h2>10 pontos</h2>
+                            <h5 class="card-title">Produto X</h5>
+                            <a asp-action="Status" class="btn btn-primary btn-header">Trocar Pontos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-box-benefits">
+                    <div class="card" style="width: 18rem; height: 100%;">
+                        <img class="card-img-top" src="~/assets/safra.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h2>10 pontos</h2>
+                            <h5 class="card-title">Brinde Y</h5>
+                            <a asp-action="Status" class="btn btn-primary btn-header">Trocar Pontos</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; height: 100%;">
+                        <img class="card-img-top" src="~/assets/mrs.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h2>10 pontos</h2>
+                            <h5 class="card-title">Desconto de 20%</h5>
+                            <a asp-action="Status" class="btn btn-primary btn-header">Trocar Pontos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-box-benefits">
+                    <div class="card" style="width: 18rem; height: 100%;">
+                        <img class="card-img-top" src="~/assets/etapa.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h2>10 pontos</h2>
+                            <h5 class="card-title">Produto A</h5>
+                            <a asp-action="Status" class="btn btn-primary btn-header">Trocar Pontos</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; height: 100%;">
+                        <img class="card-img-top" src="~/assets/tora.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h2>10 pontos</h2>
+                            <h5 class="card-title">Produto B</h5>
+                            <a asp-action="Status" class="btn btn-primary btn-header">Trocar Pontos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
